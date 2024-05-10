@@ -16,7 +16,7 @@ const HomePage2 = () => {
         stagger: 1,
         scrollTrigger: {
           trigger: "#anime",
-          start: "top 75%",
+          start: "top center",
         },
       });
       t1.from("#popup", {
@@ -26,7 +26,7 @@ const HomePage2 = () => {
         stagger: 0.5,
         scrollTrigger: {
           trigger: "#popup",
-          start: "top 75%",
+          start: "top center",
         },
       });
       t1.from("#imagescaling", {
@@ -36,7 +36,7 @@ const HomePage2 = () => {
         stagger: 0.7,
         scrollTrigger: {
           trigger: "#imagescaling",
-          start: "top 75%",
+          start: "top center",
         },
       });
     },

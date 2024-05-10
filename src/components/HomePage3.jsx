@@ -1,4 +1,4 @@
-import React,{useRef} from "react";
+import React, { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -11,25 +11,23 @@ const HomePage3 = () => {
     () => {
       var t1 = gsap.timeline();
       t1.from("#textscroll", {
-        y:-100,
+        y: 100,
         opacity: 0,
         duration: 2,
         stagger: 1,
         scrollTrigger: {
           trigger: "#textscroll",
-          start: "top 75%",
+          start: "top center",
         },
       });
       t1.from("#imagefrompx", {
-        x:1000,
-        scale:2,
-        opacity: 0,
-        duration:2,
-        stagger: 1,
-        scrollTrigger: {
-          trigger: "#imagefrompx",
-          start: "top 75%",
-        },
+        x:300,
+        stagger:1,
+        opacity:0,
+        scrollTrigger:{
+          trigger:"#imagefrompx",
+          start:"top center",
+        }
       });
     },
     { scope: page3 }
@@ -42,7 +40,10 @@ const HomePage3 = () => {
           <img className="w-full h-auto" src="/assets/bgshapes1.png" alt="" />
         </div>
         <div className="w-full h-full flex flex-col lg:flex-row-reverse items-center p-4 md:p-0 space-y-4 md:space-y-0 md:space-x-2 lg:space-x-4">
-          <div id="textscroll" className="w-full h-1/2 lg:h-full lg:w-[40%] text-3xl font-bold">
+          <div
+            id="textscroll"
+            className="w-full h-1/2 lg:h-full lg:w-[40%] text-3xl font-bold"
+          >
             <div className="grid-flow-col space-y-2 md:space-y-4 md:px-6">
               <div className="space-x-2 font-bold text-xl md:text-2xl xl:text-4xl">
                 <h1>UNLOCK THE POWER OF A</h1>
@@ -89,28 +90,20 @@ const HomePage3 = () => {
             <div className="w-full h-full">
               <div className="w-full grid grid-cols-2 grid-rows-2 space-y-2 overflow-hidden h-1/2">
                 <div className="space-x-2 col-span-2 row-span-1 flex h-">
-                  <img
-                    id="imagefrompx"
-                    className="w-1/2 h-auto"
-                    src="/assets/classroom-3.jpg"
-                  />
-                  <img
-                    id="imagefrompx"
-                    className="w-1/2"
-                    src="/assets/classroom-2.jpg"
-                  />
+                  <div id="imagefrompx" className="w-1/2 h-auto">
+                    <img className="w-full h-full" src="/assets/classroom-3.jpg" />
+                  </div>
+                  <div id="imagefrompx" className="w-1/2">
+                    <img className="w-full h-full" src="/assets/classroom-2.jpg" />
+                  </div>
                 </div>
                 <div className="space-x-2 col-span-2 row-span-1 flex h-64">
-                  <img
-                    id="imagefrompx"
-                    className="w-1/2"
-                    src="/assets/playroom-1.jpg"
-                  />
-                  <img
-                    id="imagefrompx"
-                    className="w-1/2"
-                    src="/assets/slide.jpg"
-                  />
+                  <div id="imagefrompx" className="w-1/2">
+                    <img className="w-full h-full" src="/assets/playroom-1.jpg" />
+                  </div>
+                  <div id="imagefrompx" className="w-1/2">
+                    <img className="w-full h-full" src="/assets/slide.jpg" />
+                  </div>
                 </div>
               </div>
             </div>
