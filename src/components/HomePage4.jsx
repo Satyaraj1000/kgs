@@ -8,18 +8,18 @@ const HomePage4 = () => {
   const page4 = useRef(null);
   useGSAP(
     () => {
-      var t1 = gsap.timeline({repeat:-1,repeatDelay:3});
+      var t1 = gsap.timeline({repeat:-1,repeatDelay:2});
       t1.to("#slidefromright", {
         left:0,
         stagger:4
       },"pair");
-      t1.to("#slidefrombtot", {
-        bottom:10,
+      t1.from("#slidefrombtot", {
+        y:"-60px",
         stagger:4
       },"pair");
       t1.to("#slidefrombtot", {
         delay:4,
-        top:"-100%",
+        y:"52px",
         stagger:4
       },"pair");
     },
@@ -110,11 +110,11 @@ const HomePage4 = () => {
                   <img className="w-full h-full" h-full src="/assets/sport-2.jpg" />
                 </div>
                 <div className="px-5 absolute w-2/3 h-14 bg-slate-500 bottom-10 overflow-hidden flex">
-                  <h1 id="slidefrombtot" className="font-bold text-5xl absolute items-center -bottom-12 text-blue">Lab</h1>
-                  <h1 id="slidefrombtot" className="font-bold text-5xl absolute items-center -bottom-12 text-yellow">Dancing</h1>
-                  <h1 id="slidefrombtot" className="font-bold text-5xl absolute items-center -bottom-12 text-pink">Learning</h1>
-                  <h1 id="slidefrombtot" className="font-bold text-5xl absolute items-center -bottom-12 text-green">Creativity Learning</h1>
-                  <h1 id="slidefrombtot" className="font-bold text-5xl absolute items-center -bottom-12 text-pink">Sports</h1>
+                  <h1 id="slidefrombtot" className="font-bold text-5xl absolute items-center text-blue">Lab</h1>
+                  <h1 id="slidefrombtot" className="font-bold text-5xl absolute items-center text-yellow">Dancing</h1>
+                  <h1 id="slidefrombtot" className="font-bold text-5xl absolute items-center text-pink">Learning</h1>
+                  <h1 id="slidefrombtot" className="font-bold text-5xl absolute items-center text-green">Creativity Learning</h1>
+                  <h1 id="slidefrombtot" className="font-bold text-5xl absolute items-center text-pink">Sports</h1>
                 </div>
               </div>
               {/* <div>
