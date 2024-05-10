@@ -87,91 +87,91 @@ const HomePage1 = () => {
                 id="popup"
                 className="absolute top-[0%] left-[50%] w-24 h-24 bg-[#ED7B21] mix-blend-multiply rounded-full flex items-center justify-center"
               >
-                <GraduationCapIcon className="text-white w-full h-[60%]" />
+                <GraduationCapIcon className="text-white animate-pulse delay-1000 w-full h-[60%]" />
               </div>
               <div
                 id="popup"
                 className="absolute top-[5%] left-[58%] w-32 h-32 bg-[#F6AF1A] mix-blend-multiply rounded-full flex items-center justify-center"
               >
-                <FlaskConical className="text-white w-full h-[60%]" />
+                <FlaskConical className="text-white animate-pulse delay-1000 w-full h-[60%]" />
               </div>
               <div
                 id="popup"
                 className="absolute top-[22%] left-[58%] w-32 h-32 bg-[#35B3AA] mix-blend-multiply rounded-full flex items-center justify-center"
               >
-                <Globe className="text-white w-full h-[60%]" />
+                <Globe className="text-white animate-pulse delay-1000 w-full h-[60%]" />
               </div>
               <div
                 id="popup"
                 className="absolute top-[13%] left-[49%] w-24 h-24 bg-[#DF4989] mix-blend-multiply rounded-full flex items-center justify-center"
               >
-                <BellElectricIcon className="text-white w-full h-[60%]" />
+                <BellElectricIcon className="text-white animate-pulse delay-1000 w-full h-[60%]" />
               </div>
               <div
                 id="popup"
                 className="absolute top-[30%] left-[51%] w-20 h-20 bg-[#1FB4EA] mix-blend-multiply rounded-full flex items-center justify-center"
               >
-                <Laptop2 className="text-white w-full h-[60%]" />
+                <Laptop2 className="text-white animate-pulse delay-1000 w-full h-[60%]" />
               </div>
               <div
                 id="popup"
                 className="absolute top-[13%] left-[69%] w-28 h-28 bg-[#2382C3] mix-blend-multiply rounded-full flex items-center justify-center"
               >
-                <MicroscopeIcon className="text-white w-full h-[60%]" />
+                <MicroscopeIcon className="text-white animate-pulse delay-1000 w-full h-[60%]" />
               </div>
               <div
                 id="popup"
                 className="absolute top-[36%] left-[66%] w-24 h-24 bg-[#ADCC37] mix-blend-multiply rounded-full flex items-center justify-center"
               >
-                <PersonStandingIcon className="text-white w-full h-[60%]" />
+                <PersonStandingIcon className="text-white animate-pulse delay-1000 w-full h-[60%]" />
               </div>
               <div
                 id="popup"
                 className="absolute top-[36%] left-[75%] w-16 h-16 bg-[#ADCC37] mix-blend-multiply rounded-full flex items-center justify-center"
               >
-                <LocateFixed className="text-white w-full h-[60%]" />
+                <LocateFixed className="text-white animate-pulse delay-1000 w-full h-[60%]" />
               </div>
               <div
                 id="popup"
                 className="absolute top-[27%] left-[80%] w-10 h-10 bg-[#EC7221] mix-blend-multiply rounded-full flex items-center justify-center"
               >
-                <SearchX className="text-white w-full h-[60%]" />
+                <SearchX className="text-white animate-pulse delay-1000 w-full h-[60%]" />
               </div>
               <div
                 id="popup"
                 className="absolute top-[10%] left-[79%] w-20 h-20 bg-[#37B0A4] mix-blend-multiply rounded-full flex items-center justify-center"
               >
-                <Dna className="text-white w-full h-[60%]" />
+                <Dna className="text-white animate-pulse delay-1000 w-full h-[60%]" />
               </div>
               <div
                 id="popup"
                 className="absolute top-[7%] left-[45%] w-10 h-10 bg-[#DF4989] mix-blend-multiply rounded-full flex items-center justify-center"
               >
-                <Music2 className="text-white w-full h-[60%]" />
+                <Music2 className="text-white animate-pulse delay-1000 w-full h-[60%]" />
               </div>
               <div
                 id="popup"
                 className="absolute top-[3%] left-[42%] w-8 h-8 bg-[#C3D42E] mix-blend-multiply rounded-full flex items-center justify-center"
               >
-                <BusFrontIcon className="text-white w-full h-[60%]" />
+                <BusFrontIcon className="text-white animate-pulse delay-1000 w-full h-[60%]" />
               </div>
               <div
                 id="popup"
                 className="absolute top-[12%] left-[41%] w-12 h-12 bg-[#F8B719] mix-blend-multiply rounded-full flex items-center justify-center"
               >
-                <Ruler className="text-white w-full h-[60%]" />
+                <Ruler className="text-white animate-pulse delay-1000 w-full h-[60%]" />
               </div>
               <div
                 id="popup"
                 className="absolute top-[5%] left-[72%] w-12 h-12 bg-[#EF7121] mix-blend-multiply rounded-full flex items-center justify-center"
               >
-                <TelescopeIcon className="text-white w-full h-[60%]" />
+                <TelescopeIcon className="text-white animate-pulse delay-1000 w-full h-[60%]" />
               </div>
               <div
                 id="popup"
                 className="absolute top-[0%] left-[76%] w-8 h-8 bg-[#C3D42E] mix-blend-multiply rounded-full flex items-center justify-center"
               >
-                <ArrowDownAZIcon className="text-white w-full h-[60%]" />
+                <ArrowDownAZIcon className="text-white animate-pulse delay-1000 w-full h-[60%]" />
               </div>
             </div>
           </div>

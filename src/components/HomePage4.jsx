@@ -1,8 +1,33 @@
-import React from "react";
+import React, { useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 const HomePage4 = () => {
+  gsap.registerPlugin(ScrollTrigger);
+  const page4 = useRef(null);
+  useGSAP(
+    () => {
+      var t1 = gsap.timeline({repeat:-1,repeatDelay:3});
+      t1.to("#slidefromright", {
+        left:0,
+        stagger:4
+      },"pair");
+      t1.to("#slidefrombtot", {
+        bottom:10,
+        stagger:4
+      },"pair");
+      t1.to("#slidefrombtot", {
+        delay:4,
+        top:"-100%",
+        stagger:4
+      },"pair");
+    },
+    { scope: page4 }
+  );
+
   return (
-    <div>
+    <div ref={page4}>
       <div className="w-full h-auto relative overflow-hidden">
         <div className="absolute w-full h-full -z-10 m-5">
           <div className="absolute -top-[15%] -left-[6%] w-56 h-56 rounded-full bg-yellow flex justify-center items-center">
@@ -14,11 +39,10 @@ const HomePage4 = () => {
           <div className="absolute w-52 h-52 rounded-full bg-red-300 flex justify-center items-center top-20 left-[30%]">
             <div className="w-1/2 h-1/2 bg-white rounded-full"></div>
           </div>
-          <div className="absolute w-1/2 h-1/2 -bottom-[40%] bg-amber-200 rounded-full"></div>
         </div>
 
         <div className="w-full h-full flex flex-col lg:flex-row items-center p-4 md:p-0 space-y-4 md:space-y-0 md:space-x-2 lg:space-x-4">
-          <div className="w-full h-1/2 lg:h-full lg:w-[40%] text-3xl font-bold">
+          <div className="w-full h-1/2 lg:h-full lg:w-[50%] text-3xl font-bold">
             <div className="grid-flow-col space-y-2 md:space-y-4 md:p-6">
               <div className="space-x-2 font-bold text-xl md:text-2xl xl:text-4xl">
                 <h1 className="text-blue">STATE-OF-THE-ART</h1>
@@ -67,34 +91,35 @@ const HomePage4 = () => {
               </div>
             </div>
           </div>
-          <div className="w-full h-1/2 lg:h-full lg:w-[60%] gap-2 p-2">
+          <div className="w-full h-1/2 lg:h-screen lg:w-[50%] gap-2 p-2 py-10">
             <div className="w-full h-full">
-              <div className="w-full grid grid-cols-2 grid-rows-2 space-y-2 overflow-hidden h-1/2">
-                <div className="space-x-2 col-span-2 row-span-1 flex h-">
-                  <img
-                    id="imagefrompx"
-                    className="w-1/2 h-auto"
-                    src="/assets/classroom-3.jpg"
-                  />
-                  <img
-                    id="imagefrompx"
-                    className="w-1/2"
-                    src="/assets/classroom-2.jpg"
-                  />
+              <div className="p-2 relative w-full h-2/3 flex overflow-hidden">
+                <div id="slidefromright" className="w-full h-full object-cover left-full absolute">
+                  <img src="/assets/lab.jpg" />
                 </div>
-                <div className="space-x-2 col-span-2 row-span-1 flex h-64">
-                  <img
-                    id="imagefrompx"
-                    className="w-1/2"
-                    src="/assets/playroom-1.jpg"
-                  />
-                  <img
-                    id="imagefrompx"
-                    className="w-1/2"
-                    src="/assets/slide.jpg"
-                  />
+                <div id="slidefromright" className="w-full h-full object-cover left-full absolute">
+                  <img className="w-full" src="/assets/dancing.jpg" />
+                </div>
+                <div id="slidefromright" className="w-full h-full object-cover left-full absolute">
+                  <img src="/assets/learning.jpg" />
+                </div>
+                <div id="slidefromright" className="w-full h-full object-cover left-full absolute">
+                  <img src="/assets/learn-creativity.jpg" />
+                </div>
+                <div id="slidefromright" className="w-full flex items-center h-full left-full absolute">
+                  <img className="w-full h-full" h-full src="/assets/sport-2.jpg" />
+                </div>
+                <div className="px-5 absolute w-2/3 h-14 bg-slate-500 bottom-10 overflow-hidden flex">
+                  <h1 id="slidefrombtot" className="font-bold text-5xl absolute items-center -bottom-12 text-blue">Lab</h1>
+                  <h1 id="slidefrombtot" className="font-bold text-5xl absolute items-center -bottom-12 text-yellow">Dancing</h1>
+                  <h1 id="slidefrombtot" className="font-bold text-5xl absolute items-center -bottom-12 text-pink">Learning</h1>
+                  <h1 id="slidefrombtot" className="font-bold text-5xl absolute items-center -bottom-12 text-green">Creativity Learning</h1>
+                  <h1 id="slidefrombtot" className="font-bold text-5xl absolute items-center -bottom-12 text-pink">Sports</h1>
                 </div>
               </div>
+              {/* <div>
+                <img src="/assets/learn.png" alt="" />
+              </div> */}
             </div>
           </div>
         </div>

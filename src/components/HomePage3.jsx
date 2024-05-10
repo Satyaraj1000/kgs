@@ -10,33 +10,25 @@ const HomePage3 = () => {
   useGSAP(
     () => {
       var t1 = gsap.timeline();
-      // t1.from("#anime", {
-      //   x: -100,
-      //   opacity: 0,
-      //   duration: 2,
-      //   stagger: 1,
-      //   scrollTrigger: {
-      //     trigger: "#anime",
-      //     start: "top 50%",
-      //   },
-      // });
-      // t1.from("#popup", {
-      //   x: -100,
-      //   opacity: 0,
-      //   duration: 3,
-      //   stagger: 0.5,
-      //   scrollTrigger: {
-      //     trigger: "#popup",
-      //     start: "top center",
-      //   },
-      // });
-      t1.from("#imagefrompx", {
-        x:100,
+      t1.from("#textscroll", {
+        y:-100,
         opacity: 0,
+        duration: 2,
+        stagger: 1,
+        scrollTrigger: {
+          trigger: "#textscroll",
+          start: "top 75%",
+        },
+      });
+      t1.from("#imagefrompx", {
+        x:1000,
+        scale:2,
+        opacity: 0,
+        duration:2,
         stagger: 1,
         scrollTrigger: {
           trigger: "#imagefrompx",
-          start: "top 50%",
+          start: "top 75%",
         },
       });
     },
@@ -50,7 +42,7 @@ const HomePage3 = () => {
           <img className="w-full h-auto" src="/assets/bgshapes1.png" alt="" />
         </div>
         <div className="w-full h-full flex flex-col lg:flex-row-reverse items-center p-4 md:p-0 space-y-4 md:space-y-0 md:space-x-2 lg:space-x-4">
-          <div className="w-full h-1/2 lg:h-full lg:w-[40%] text-3xl font-bold">
+          <div id="textscroll" className="w-full h-1/2 lg:h-full lg:w-[40%] text-3xl font-bold">
             <div className="grid-flow-col space-y-2 md:space-y-4 md:px-6">
               <div className="space-x-2 font-bold text-xl md:text-2xl xl:text-4xl">
                 <h1>UNLOCK THE POWER OF A</h1>

@@ -16,7 +16,7 @@ const HomePage2 = () => {
         stagger: 1,
         scrollTrigger: {
           trigger: "#anime",
-          start: "top 50%",
+          start: "top 75%",
         },
       });
       t1.from("#popup", {
@@ -26,7 +26,7 @@ const HomePage2 = () => {
         stagger: 0.5,
         scrollTrigger: {
           trigger: "#popup",
-          start: "top center",
+          start: "top 75%",
         },
       });
       t1.from("#imagescaling", {
@@ -36,7 +36,7 @@ const HomePage2 = () => {
         stagger: 0.7,
         scrollTrigger: {
           trigger: "#imagescaling",
-          start: "top 50%",
+          start: "top 75%",
         },
       });
     },
@@ -45,7 +45,7 @@ const HomePage2 = () => {
 
   return (
     <div ref={page2}>
-      <div className="w-full space-y-4 md:space-y-0 md:space-x-2 lg:space-x-4 px-4 overflow-hidden">
+      <div className="w-full space-y-4 md:space-y-0 md:space-x-2 lg:space-x-4 overflow-hidden">
         <div className="w-full h-auto">
           <div className="w-full relative">
             <div className="absolute w-full h-full bg-sky-400 -z-10">
@@ -83,7 +83,7 @@ const HomePage2 = () => {
         </div>
 
         <div className="relative w-full h-full flex flex-col lg:flex-row items-center space-x-2">
-          <div className="absolute bg-red-300 w-1/3 -z-10 h-full">
+          <div className="absolute bg-red-200 w-1/3 -z-10 h-full">
             <div className="absolute w-1/2 h-1/2 bg-white"></div>
             <div className="absolute w-1/2 h-1/2 bottom-0 right-0 bg-white"></div>
           </div>
