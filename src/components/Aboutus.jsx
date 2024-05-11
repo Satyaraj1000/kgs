@@ -12,21 +12,27 @@ const Aboutus = () => {
       </section>
 
       {/* Kapol Legacy */}
-      <section className="lg:p-10 w-full h-auto">
+      <section className="w-full h-auto">
         <div className="relative rounded-xl">
-          <div className="absolute -z-10 w-full h-full bg-yellow overflow-hidden">
+          <div className="absolute -z-10 w-full h-full bg-blue overflow-hidden rounded-lg">
             <div className="w-52 h-52 rounded-full bg-white absolute -bottom-40 -left-[4%]"></div>
             <div className="w-52 h-52 rounded-full bg-white absolute -bottom-36 left-[6%]"></div>
-            <div className="w-52 h-52 rounded-full bg-white absolute -bottom-32 left-[16%]"></div>
-            <div className="w-32 h-32 rounded-full bg-white absolute flex items-center justify-center">
+            <div className="w-52 h-52 rounded-full bg-white absolute -bottom-32 left-[16%] flex items-center justify-center">
+              <div className="w-1/2 h-1/2 bg-yellow rounded-full"></div>
+            </div>
+            <div className="w-32 h-32 rounded-full bg-white absolute flex items-center justify-center -top-4 -left-4">
+              <div className="w-1/2 h-1/2 bg-yellow rounded-full"></div>
+            </div>
+            <div className="w-32 h-32 rounded-full bg-white absolute flex items-center justify-center bottom-10 left-[22%]">
               <div className="w-1/2 h-1/2 bg-yellow rounded-full"></div>
             </div>
           </div>
+
           <div className="w-full h-ful p-5 lg:p-10 text-center xl:text-left space-y-4">
             <h1 className="font-bold text-4xl xl:text-5xl text-green">
               THE KAPOL LEGACY
             </h1>
-            <p className="text-sm md:text-lg p-2">
+            <p className="text-sm md:text-lg p-2 font-semibold">
               In 2002, the seeds of Kapol Vidyanidhi International School were
               sown with a profound vision: to cultivate a realm of enlightenment
               through education. With a steadfast commitment to this noble
@@ -56,7 +62,30 @@ const Aboutus = () => {
       </section>
 
       {/* Tribute to Chairperson */}
-      <section className="lg:p-10 mt-2 md:-mb-40 w-full h-auto">
+      <section className="relative mt-2 w-full">
+        <div className="absolute -z-10 w-full h-full bg-yellow overflow-hidden rounded-lg">
+          <div className="w-52 h-52 rounded-full bg-blue absolute -bottom-40 -left-[4%]"></div>
+          <div className="w-52 h-52 rounded-full bg-blue absolute -bottom-36 left-[6%]"></div>
+          <div className="w-52 h-52 rounded-full bg-blue absolute -bottom-32 left-[16%] flex items-center justify-center">
+            <div className="w-1/2 h-1/2 bg-yellow rounded-full"></div>
+          </div>
+          <div className="w-32 h-32 rounded-full bg-blue absolute flex items-center justify-center -top-4 -left-4">
+            <div className="w-1/2 h-1/2 bg-yellow rounded-full"></div>
+          </div>
+          <div className="w-40 h-40 rounded-full bg-blue absolute flex items-center justify-center top-14 left-14">
+            <div className="w-1/2 h-1/2 bg-yellow rounded-full"></div>
+          </div>
+          <div className="w-32 h-32 rounded-full bg-blue absolute flex items-center justify-center bottom-10 left-[22%]">
+            <div className="w-1/2 h-1/2 bg-yellow rounded-full"></div>
+          </div>
+          <div className="w-32 h-32 rounded-xl bg-blue absolute flex items-center justify-center -right-10 -top-10">
+            <div className="w-1/2 h-1/2 bg-yellow rounded-xl"></div>
+          </div>
+          <div className="w-32 h-32 rounded-xl bg-blue absolute flex items-center justify-center right-20 top-20">
+            <div className="w-1/2 h-1/2 bg-yellow rounded-xl"></div>
+          </div>
+        </div>
+
         <div className="rounded-xl">
           <div className="w-full h-ful p-5 lg:p-10 text-center xl:text-left">
             <h1 className="font-bold text-3xl xl:text-5xl text-center text-blue">
@@ -66,16 +95,18 @@ const Aboutus = () => {
               TO OUR CHAIRMAN
             </h1>
             <div className="w-full flex items-center justify-center">
-              <img
-                className="xl:w-80 xl:h-80 w-40 h-40 m-5 rounded-full"
-                src=""
-                alt=""
-              />
+              <div className="bg-white rounded-2xl">
+                <img
+                  className="xl:w-80 xl:h-80 w-40 h-40 m-5 rounded-full"
+                  src=""
+                  alt=""
+                />
+              </div>
             </div>
-            <h1 className="font-bold text-xl xl:text-3xl text-center">
-              Late Dr. Jiten P. Mody
-            </h1>
-            <p className="text-sm md:text-lg p-5 lg:p-10">
+            <div className="font-bold text-xl xl:text-3xl flex items-center justify-center p-2">
+              <h1>Late Dr. Jiten P. Mody</h1>
+            </div>
+            <p className="text-sm md:text-lg p-5 lg:p-10 font-semibold">
               In 2002, the seeds of Kapol Vidyanidhi International School were
               sown with a profound vision: to cultivate a realm of enlightenment
               through education. With a steadfast commitment to this noble
@@ -99,8 +130,22 @@ const Aboutus = () => {
         </div>
       </section>
 
-      {/* Alka Vora Maam */}
-      <section className="relative lg:p-10 mt-2 md:-mt-10 w-full h-auto">
+      {/* Chairperson Alka Vora Maam */}
+      <section className="relative mt-2 w-full h-auto">
+        <div className="absolute -z-10 w-full h-full bg-orange-400 overflow-hidden rounded-lg">
+
+          <div className="absolute w-1/4 h-1/5 bg-white top-28 rounded-xl left-24"></div>
+          <div className="w-52 h-52 rounded-full bg-white absolute -bottom-32 left-[16%] flex items-center justify-center">
+            <div className="w-1/2 h-1/2 bg-orange-400 rounded-full"></div>
+          </div>
+          <div className="w-32 h-32 rounded-xl bg-white absolute flex items-center justify-center -right-10 -top-10">
+            <div className="w-1/2 h-1/2 bg-orange-400 rounded-xl"></div>
+          </div>
+          <div className="w-32 h-32 rounded-xl bg-white absolute flex items-center justify-center right-20 top-20">
+            <div className="w-1/2 h-1/2 bg-orange-400 rounded-xl"></div>
+          </div>
+        </div>
+
         <div className=" rounded-xl">
           <div className="w-full h-full p-10 lg:p-28">
             <div className="flex w-full justify-between items-center">
@@ -117,7 +162,7 @@ const Aboutus = () => {
                 />
               </div>
             </div>
-            <p className="mt-10 text-sm md:text-lg">
+            <p className="mt-10 text-sm md:text-lg font-semibold">
               We at Kapol love children and it was in 1982 that the Trustees
               started the first institute in Nalasopara called as Adarsh
               Education Society (SSC). In 2002{" "}
@@ -138,7 +183,8 @@ const Aboutus = () => {
               has embarked a journey of transformation, embracing new
               technologies, pedagogical approaches, and global perspectives to
               enrich the learning experience of our students. We are focusing on
-              nurturing talent, fostering creativity and instilling a sense of
+              nurturing talent, fostering creativity and instilling a sense of{" "}
+              <br />
               responsibility and integrity in our students sets Cambridge School
               apart as a beacon of educational excellence.
               <br />
@@ -158,15 +204,18 @@ const Aboutus = () => {
             </p>
             <img
               className="absolute bottom-0 right-0 w-40 lg:w-96"
-              src="src/assets/alka maam.png"
+              src="/assets/Chairperson.png"
               alt=""
             />
           </div>
         </div>
       </section>
 
-      {/* Reshma Maam */}
-      <section className="relative lg:p-10 mt-2 md:-mt-20 w-full h-auto">
+      {/* Director of Academics Reshma Maam */}
+      <section className="relative mt-2 w-full h-auto">
+        <div className="absolute -z-10 w-full h-full bg-red-400 overflow-hidden rounded-lg">
+          <div className="absolute w-1/4 h-1/5 bg-white top-28 rounded-xl left-24"></div>
+        </div>
         <div className=" rounded-xl">
           <div className="w-full h-full p-10 lg:p-28">
             <div className="flex w-full justify-between items-center">
@@ -181,7 +230,7 @@ const Aboutus = () => {
                 <img className="w-28 lg:w-52" src="src/assets/lamp.png" alt="" />
               </div> */}
             </div>
-            <p className="mt-10 text-sm md:text-lg">
+            <p className="mt-10 text-sm md:text-lg font-semibold">
               With an enduring focus on shaping the educational landscape of our
               institution, I am inspired by the vision that propels us forward -
               a vision rooted in excellence, innovation, and a dedication to
@@ -195,10 +244,10 @@ const Aboutus = () => {
               Examinations), we aim to nurture global citizens - individuals
               equipped with the requisite skills, knowledge, and mindset to
               thrive in an interconnected and ever-evolving global milieu. We
-              ardently champion experiential learning and the practical
+              ardently champion <br /> experiential learning and the practical
               application of knowledge within authentic contexts, empowering our
-              students to traverse the horizon of tomorrow with unwavering poise
-              and integrity.
+              students to traverse the horizon <br /> of tomorrow with
+              unwavering poise and integrity.
               <br />
               <br />
               I cordially invite you to join us in sculpting the next epoch of
@@ -216,7 +265,7 @@ const Aboutus = () => {
             </p>
             <img
               className="absolute bottom-0 right-0 w-40 lg:w-96"
-              src="src/assets/principal maam.png"
+              src="/assets/Director_of_Academia.png"
               alt=""
             />
           </div>
