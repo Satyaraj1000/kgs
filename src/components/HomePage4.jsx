@@ -1,10 +1,11 @@
 import React, { useRef } from "react";
-import gsap from "gsap";
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from "@gsap/react";
-import ScrollTrigger from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(gsap,useGSAP,ScrollTrigger);
 
 const HomePage4 = () => {
-  gsap.registerPlugin(ScrollTrigger);
   const page4 = useRef(null);
   useGSAP(
     () => {
