@@ -9,7 +9,7 @@ const HomePage4 = () => {
   useGSAP(
     () => {
       var t1 = gsap.timeline();
-      var t2 = gsap.timeline({ repeat: -1, repeatDelay: 2 });
+      var t2 = gsap.timeline({ repeat: -1, repeatDelay: 1 });
       t1.from("#slideleft", {
         x: 200,
         opacity: 0,
