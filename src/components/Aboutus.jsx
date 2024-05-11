@@ -2,12 +2,30 @@ import React from "react";
 
 const Aboutus = () => {
   return (
-    <div>
+    <>
+      <section className="p-5 z-50">
+        <span className="space-x-5 font-bold text-sky-900 text-5xl flex items-center font-[Cardo-Bold]">
+          KAPOL GLOBAL ACADEMY
+          <p className="font-medium text-sm md:text-md lg:text-4xl">(IGCSE)</p>
+        </span>
+        <h1 className="text-3xl">(our sister concern school)</h1>
+      </section>
+
       {/* Kapol Legacy */}
       <section className="lg:p-10 w-full h-auto">
-        <div className="rounded-xl">
-          <div className="w-full h-ful p-5 lg:p-10 text-center xl:text-left">
-            <h1 className="font-bold text-4xl xl:text-5xl text-green">THE KAPOL LEGACY</h1>
+        <div className="relative rounded-xl">
+          <div className="absolute -z-10 w-full h-full bg-yellow overflow-hidden">
+            <div className="w-52 h-52 rounded-full bg-white absolute -bottom-40 -left-[4%]"></div>
+            <div className="w-52 h-52 rounded-full bg-white absolute -bottom-36 left-[6%]"></div>
+            <div className="w-52 h-52 rounded-full bg-white absolute -bottom-32 left-[16%]"></div>
+            <div className="w-32 h-32 rounded-full bg-white absolute flex items-center justify-center">
+              <div className="w-1/2 h-1/2 bg-yellow rounded-full"></div>
+            </div>
+          </div>
+          <div className="w-full h-ful p-5 lg:p-10 text-center xl:text-left space-y-4">
+            <h1 className="font-bold text-4xl xl:text-5xl text-green">
+              THE KAPOL LEGACY
+            </h1>
             <p className="text-sm md:text-lg p-2">
               In 2002, the seeds of Kapol Vidyanidhi International School were
               sown with a profound vision: to cultivate a realm of enlightenment
@@ -48,7 +66,11 @@ const Aboutus = () => {
               TO OUR CHAIRMAN
             </h1>
             <div className="w-full flex items-center justify-center">
-              <img className="xl:w-80 xl:h-80 w-40 h-40 m-5 rounded-full" src="" alt="" />
+              <img
+                className="xl:w-80 xl:h-80 w-40 h-40 m-5 rounded-full"
+                src=""
+                alt=""
+              />
             </div>
             <h1 className="font-bold text-xl xl:text-3xl text-center">
               Late Dr. Jiten P. Mody
@@ -82,48 +104,63 @@ const Aboutus = () => {
         <div className=" rounded-xl">
           <div className="w-full h-full p-10 lg:p-28">
             <div className="flex w-full justify-between items-center">
-              <h1 className="font-bold text-3xl xl:text-6xl text-yellow">A VISION <br />
+              <h1 className="font-bold text-3xl xl:text-6xl text-yellow">
+                A VISION <br />
                 FOR <br />
-                THE FUTURE</h1>
+                THE FUTURE
+              </h1>
               <div>
-                <img className="w-28 lg:w-60" src="src/assets/lamp.png" alt="" />
+                <img
+                  className="w-28 lg:w-60"
+                  src="src/assets/lamp.png"
+                  alt=""
+                />
               </div>
             </div>
             <p className="mt-10 text-sm md:text-lg">
-              We at Kapol love children and it was in 1982 that the Trustees started the
-              first institute in Nalasopara called as Adarsh Education Society (SSC). In
-              2002 <b>Kapol Vidyanidhi International School (ICSE)</b>&nbsp;came into existence and
-              later came Kapol Vidyanidhi College of Hotel Management & Technology and
-              Jiten Mody Junior College (HSC) of Arts, Commerce and Science. In a sense,
-              today we nurture the 3 years old who come to us till they grow up into
-              confident and responsible adults with a degree and skillsets to make their
-              own path way in life. <br />
+              We at Kapol love children and it was in 1982 that the Trustees
+              started the first institute in Nalasopara called as Adarsh
+              Education Society (SSC). In 2002{" "}
+              <b>Kapol Vidyanidhi International School (ICSE)</b>&nbsp;came into
+              existence and later came Kapol Vidyanidhi College of Hotel
+              Management & Technology and Jiten Mody Junior College (HSC) of
+              Arts, Commerce and Science. In a sense, today we nurture the 3
+              years old who come to us till they grow up into confident and
+              responsible adults with a degree and skillsets to make their own
+              path way in life. <br />
               <br />
-              Few years back we dreamt of going one step further to prepare children for
-              a global competitive world by starting an IGCSE School, affiliated to the
-              Cambridge Board, UK.
+              Few years back we dreamt of going one step further to prepare
+              children for a global competitive world by starting an IGCSE
+              School, affiliated to the Cambridge Board, UK.
               <br />
               <br />
               Our dream school, <b>Kapol Global Academy (IGCSE)</b>
-              has embarked a journey of transformation, embracing
-              new technologies, pedagogical approaches, and
-              global perspectives to enrich the learning experience
-              of our students. We are focusing on nurturing talent,
-              fostering creativity and instilling a sense of responsibility
-              and integrity in our students sets Cambridge School
+              has embarked a journey of transformation, embracing new
+              technologies, pedagogical approaches, and global perspectives to
+              enrich the learning experience of our students. We are focusing on
+              nurturing talent, fostering creativity and instilling a sense of
+              responsibility and integrity in our students sets Cambridge School
               apart as a beacon of educational excellence.
-              <br /><br />
-              As we move ahead on a path illuminated by the
-              transformative power of education, we seek
-              your support to fulfill our noble endeavours.
-              <br /><br />
+              <br />
+              <br />
+              As we move ahead on a path illuminated by the transformative power
+              of education, we seek your support to fulfill our noble
+              endeavours.
+              <br />
+              <br />
               Warm regards,
-              <br /><br />
-              <b>Alka Paresh Vora</b><br />
+              <br />
+              <br />
+              <b>Alka Paresh Vora</b>
+              <br />
               Chairperson <br />
               Kapol Global Academy Foundation
             </p>
-            <img className="absolute bottom-0 right-0 w-40 lg:w-96" src="src/assets/alka maam.png" alt="" />
+            <img
+              className="absolute bottom-0 right-0 w-40 lg:w-96"
+              src="src/assets/alka maam.png"
+              alt=""
+            />
           </div>
         </div>
       </section>
@@ -133,41 +170,55 @@ const Aboutus = () => {
         <div className=" rounded-xl">
           <div className="w-full h-full p-10 lg:p-28">
             <div className="flex w-full justify-between items-center">
-              <h1 className="font-bold text-3xl xl:text-6xl text-pink">MADE<br />
-                FOR GLOBAL<br />
-                CITIZENS</h1>
+              <h1 className="font-bold text-3xl xl:text-6xl text-pink">
+                MADE
+                <br />
+                FOR GLOBAL
+                <br />
+                CITIZENS
+              </h1>
               {/* <div>
                 <img className="w-28 lg:w-52" src="src/assets/lamp.png" alt="" />
               </div> */}
             </div>
             <p className="mt-10 text-sm md:text-lg">
-              With an enduring focus on shaping the educational landscape of our institution,
-              I am inspired by the vision that propels us forward - a vision rooted in excellence,
-              innovation, and a dedication to preparing students for a world without boundaries.<br />
+              With an enduring focus on shaping the educational landscape of our
+              institution, I am inspired by the vision that propels us forward -
+              a vision rooted in excellence, innovation, and a dedication to
+              preparing students for a world without boundaries.
               <br />
-              At Kapol Global Academy (IGCSE), we espouse the internationally acclaimed
-              IGCSE curriculum renowned for its rigour, profound depth and steadfast
-              emphasis on critical thinking prowess. Through our esteemed partnership with
-              CIE (Cambridge International Examinations), we aim to
-              nurture global citizens - individuals equipped with the
-              requisite skills, knowledge, and mindset to thrive in an
-              interconnected and ever-evolving global milieu. We
+              <br />
+              At Kapol Global Academy (IGCSE), we espouse the internationally
+              acclaimed IGCSE curriculum renowned for its rigour, profound depth
+              and steadfast emphasis on critical thinking prowess. Through our
+              esteemed partnership with CIE (Cambridge International
+              Examinations), we aim to nurture global citizens - individuals
+              equipped with the requisite skills, knowledge, and mindset to
+              thrive in an interconnected and ever-evolving global milieu. We
               ardently champion experiential learning and the practical
-              application of knowledge within authentic contexts,
-              empowering our students to traverse the horizon
-              of tomorrow with unwavering poise and integrity.
+              application of knowledge within authentic contexts, empowering our
+              students to traverse the horizon of tomorrow with unwavering poise
+              and integrity.
               <br />
               <br />
-              I cordially invite you to join us in sculpting the
-              next epoch of world leaders and trailblazers.
-              <br /><br />
+              I cordially invite you to join us in sculpting the next epoch of
+              world leaders and trailblazers.
+              <br />
+              <br />
               Warm regards,
-              <br /><br />
-              <b>Dr. Reshma Hegde</b><br />
-              Director of Academics<br />
+              <br />
+              <br />
+              <b>Dr. Reshma Hegde</b>
+              <br />
+              Director of Academics
+              <br />
               Kapol Global Academy (IGCSE)
             </p>
-            <img className="absolute bottom-0 right-0 w-40 lg:w-96" src="src/assets/principal maam.png" alt="" />
+            <img
+              className="absolute bottom-0 right-0 w-40 lg:w-96"
+              src="src/assets/principal maam.png"
+              alt=""
+            />
           </div>
         </div>
       </section>
@@ -232,7 +283,7 @@ const Aboutus = () => {
           </ol>
         </div>
       </section>
-    </div>
+    </>
   );
 };
 

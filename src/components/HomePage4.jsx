@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 
-gsap.registerPlugin(gsap,useGSAP,ScrollTrigger);
+gsap.registerPlugin(gsap, useGSAP, ScrollTrigger);
 
 const HomePage4 = () => {
   const page4 = useRef(null);
@@ -14,17 +14,16 @@ const HomePage4 = () => {
       t1.from("#slideleft", {
         x: 200,
         opacity: 0,
-        delay: 1,
-        duration: 2,
+        duration: 1,
         scrollTrigger: {
           trigger: "#slideleft",
-          start: "top center",
+          start: "top 75%",
         },
       });
-      t2.to(
+      t2.from(
         "#slidefromright",
         {
-          left: 0,
+          x: "100%",
           stagger: 4,
         },
         "pair"
@@ -126,31 +125,31 @@ const HomePage4 = () => {
               <div className="p-2 relative w-full h-2/3 flex overflow-hidden">
                 <div
                   id="slidefromright"
-                  className="w-full h-full object-cover left-full absolute"
+                  className="w-full h-full object-cover absolute"
                 >
                   <img src="/assets/lab.jpg" />
                 </div>
                 <div
                   id="slidefromright"
-                  className="w-full h-full object-cover left-full absolute"
+                  className="w-full h-full object-cover absolute"
                 >
                   <img className="w-full" src="/assets/dancing.jpg" />
                 </div>
                 <div
                   id="slidefromright"
-                  className="w-full h-full object-cover left-full absolute"
+                  className="w-full h-full object-cover absolute"
                 >
                   <img src="/assets/learning.jpg" />
                 </div>
                 <div
                   id="slidefromright"
-                  className="w-full h-full object-cover left-full absolute"
+                  className="w-full h-full object-cover absolute"
                 >
                   <img src="/assets/learn-creativity.jpg" />
                 </div>
                 <div
                   id="slidefromright"
-                  className="w-full flex items-center h-full left-full absolute"
+                  className="w-full flex items-center h-full absolute"
                 >
                   <img
                     className="w-full h-full"

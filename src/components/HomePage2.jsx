@@ -1,11 +1,13 @@
 import React, { useRef } from "react";
-import gsap from "gsap/all";
-import { useGSAP } from "@gsap/react";
+import { gsap } from "gsap/all";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const HomePage2 = () => {
-  gsap.registerPlugin(ScrollTrigger);
-  const page2 = useRef(null);
+  const page2Ref = useRef(null);
+
   useGSAP(
     () => {
       var t1 = gsap.timeline();
@@ -16,7 +18,17 @@ const HomePage2 = () => {
         stagger: 1,
         scrollTrigger: {
           trigger: "#anime",
-          start: "top center",
+          start: "top 75%",
+        },
+      });
+      t1.from("#textscroll", {
+        y: 100,
+        opacity: 0,
+        duration: 2,
+        stagger: 1,
+        scrollTrigger: {
+          trigger: "#textscroll",
+          start: "top 75%",
         },
       });
       t1.from("#popup", {
@@ -26,7 +38,7 @@ const HomePage2 = () => {
         stagger: 0.5,
         scrollTrigger: {
           trigger: "#popup",
-          start: "top center",
+          start: "top 75%",
         },
       });
       t1.from("#imagescaling", {
@@ -36,15 +48,15 @@ const HomePage2 = () => {
         stagger: 0.7,
         scrollTrigger: {
           trigger: "#imagescaling",
-          start: "top center",
+          start: "top 75%",
         },
       });
     },
-    { scope: page2 }
+    { scope: page2Ref }
   );
 
   return (
-    <div ref={page2}>
+    <div ref={page2Ref}>
       <div className="w-full space-y-4 md:space-y-0 md:space-x-2 lg:space-x-4 overflow-hidden">
         <div className="w-full h-auto">
           <div className="w-full relative">
@@ -87,7 +99,7 @@ const HomePage2 = () => {
             <div className="absolute w-1/2 h-1/2 bg-white"></div>
             <div className="absolute w-1/2 h-1/2 bottom-0 right-0 bg-white"></div>
           </div>
-          <div className="w-full h-1/2 lg:h-full lg:w-1/3 text-3xl p-2">
+          <div id="textscroll" className="w-full h-1/2 lg:h-full lg:w-1/3 text-3xl p-2">
             <div className="grid-flow-col space-y-2 md:space-y-4 font-bold">
               <div className="flex space-x-2 font-bold text-xl md:text-2xl xl:text-4xl">
                 <h1 className="text-blue">OUR CORE</h1>

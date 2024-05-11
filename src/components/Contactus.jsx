@@ -10,8 +10,19 @@ const Contactus = () => {
             <div className="absolute w-52 h-52 bg-lime-200 rounded-full -right-10 -top-10"></div>
             <div className="absolute w-[43%] h-2/3 bg-lime-200 rounded-xl top-20 left-[3%]"></div>
           </div>
-          <div className="absolute w-52 h-52 bg-white rounded-full left-[34%] top-0"></div>
+          <div className="absolute w-52 h-52 -z-10 bg-white rounded-full left-[34%] top-0"></div>
         </div>
+
+        <div className="p-5 z-50">
+          <span className="space-x-5 font-bold text-sky-900 text-5xl flex items-center font-[Cardo-Bold]">
+            KAPOL GLOBAL ACADEMY
+            <p className="font-medium text-sm md:text-md lg:text-4xl">
+              (IGCSE)
+            </p>
+          </span>
+          <h1 className="text-3xl">(our sister concern school)</h1>
+        </div>
+
         <div className="relative mx-auto max-w-7xl px-4">
           <div className="mx-auto max-w-8xl py-12 md:py-24">
             <div className="grid items-center justify-items-center gap-x-4 gap-y-10 lg:grid-cols-2">

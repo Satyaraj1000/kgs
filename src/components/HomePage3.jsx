@@ -1,15 +1,15 @@
 import React, { useRef } from "react";
-import gsap from "gsap";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-import ScrollTrigger from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(gsap, useGSAP, ScrollTrigger);
 
 const HomePage3 = () => {
-
-  gsap.registerPlugin(ScrollTrigger);
-  const page3 = useRef(null);
+  const page3Ref = useRef(null);
   useGSAP(
     () => {
-      var t1 = gsap.timeline();
+      const t1 = gsap.timeline();
       t1.from("#textscroll", {
         y: 100,
         opacity: 0,
@@ -17,24 +17,25 @@ const HomePage3 = () => {
         stagger: 1,
         scrollTrigger: {
           trigger: "#textscroll",
-          start: "top center",
+          start: "top 75%",
         },
       });
       t1.from("#imagefrompx", {
-        x:300,
-        stagger:1,
-        opacity:0,
-        scrollTrigger:{
-          trigger:"#imagefrompx",
-          start:"top center",
-        }
+        x: 300,
+        opacity: 0,
+        duration: 2,
+        stagger: 1,
+        scrollTrigger: {
+          trigger: "#imagefrompx",
+          start: "top 75%",
+        },
       });
     },
-    { scope: page3 }
+    { scope: page3Ref }
   );
 
   return (
-    <div ref={page3}>
+    <div ref={page3Ref}>
       <div className="w-full h-auto relative overflow-hidden">
         <div className="absolute w-full h-auto -z-10">
           <img className="w-full h-auto" src="/assets/bgshapes1.png" alt="" />
@@ -91,15 +92,24 @@ const HomePage3 = () => {
               <div className="w-full grid grid-cols-2 grid-rows-2 space-y-2 overflow-hidden h-1/2">
                 <div className="space-x-2 col-span-2 row-span-1 flex h-">
                   <div id="imagefrompx" className="w-1/2 h-auto">
-                    <img className="w-full h-full" src="/assets/classroom-3.jpg" />
+                    <img
+                      className="w-full h-full"
+                      src="/assets/classroom-3.jpg"
+                    />
                   </div>
                   <div id="imagefrompx" className="w-1/2">
-                    <img className="w-full h-full" src="/assets/classroom-2.jpg" />
+                    <img
+                      className="w-full h-full"
+                      src="/assets/classroom-2.jpg"
+                    />
                   </div>
                 </div>
                 <div className="space-x-2 col-span-2 row-span-1 flex h-64">
                   <div id="imagefrompx" className="w-1/2">
-                    <img className="w-full h-full" src="/assets/playroom-1.jpg" />
+                    <img
+                      className="w-full h-full"
+                      src="/assets/playroom-1.jpg"
+                    />
                   </div>
                   <div id="imagefrompx" className="w-1/2">
                     <img className="w-full h-full" src="/assets/slide.jpg" />
