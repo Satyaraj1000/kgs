@@ -51,11 +51,11 @@ const HomePage3 = () => {
                 <h1 className="text-blue">GLOBAL CURRICULUM</h1>
               </div>
               <div className="flex space-x-2 text-lg md:text-xl lg:text-2xl">
-                <h2 className="text-pink font-bold">
+                <h2 className="text-pink font-semibold">
                   Tranform your child’s learning journey!
                 </h2>
               </div>
-              <div className="text-sm md:text-lg">
+              <div className="text-sm md:text-lg font-semibold">
                 <p>
                   Our learning spaces are designed to bring the best of the
                   IGCSE curriculum to your child. We emphasize on hands-on
@@ -73,7 +73,7 @@ const HomePage3 = () => {
                 <h2 className="text-blue font-bold">HOLISTIC</h2>
                 <h2>GROWTH</h2>
               </div>
-              <div className="text-sm md:text-lg">
+              <div className="text-sm md:text-lg font-semibold">
                 <p>
                   At Kapol Global Academy (IGCSE), we understand every child is
                   unique. Whether your child aspires to be a scientist, artist,

@@ -67,7 +67,7 @@ const HomePage4 = () => {
         <div className="w-full h-full flex flex-col lg:flex-row items-center p-4 md:p-0 space-y-4 md:space-y-0 md:space-x-2 lg:space-x-4">
           <div
             id="slideleft"
-            className="w-full h-1/2 lg:h-full lg:w-[50%] text-3xl font-bold"
+            className="w-full h-1/2 lg:h-full lg:w-[50%] text-3xl font-semibold"
           >
             <div className="grid-flow-col space-y-2 md:space-y-4 md:p-6">
               <div className="space-x-2 font-bold text-xl md:text-2xl xl:text-4xl">

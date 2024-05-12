@@ -109,7 +109,7 @@ const HomePage2 = () => {
                 <h2 className="text-pink">SMALL CLASS</h2>
                 <h2>SIZES</h2>
               </div>
-              <div className="text-sm md:text-lg">
+              <div className="text-sm md:text-lg font-semibold">
                 <p>
                   Each class will have a maximum of 20 students, with a
                   dedicated class teacher and an assisting teacher, in addition
@@ -122,7 +122,7 @@ const HomePage2 = () => {
                 <h2>DEDICATED</h2>
                 <h2 className="text-pink">SCHOOL COUNSELLOR</h2>
               </div>
-              <div className="text-sm md:text-lg">
+              <div className="text-sm md:text-lg font-semibold">
                 <p>
                   We understand it is important to help children with their
                   emotional and social development. Whether it's making friends,
